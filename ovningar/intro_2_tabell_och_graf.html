@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -37,14 +37,11 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -89,7 +86,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Tervetuloa avoimen datan pariin
+   Välkommen att använda Open Data
   </a>
  </li>
 </ul>
@@ -382,7 +379,8 @@
 <blockquote>
 <div><p>Gå till databanken genom att klicka på länken. Klicka på länkar enligt bilderna nedan, så att du öppnar fliken &quot;Hälsobeteende och psykiska symtom&quot;</p>
 </div></blockquote>
-<img src=Data/THLmeny.PNG width=600></div>
+<a class="reference internal image-reference" href="ovningar/Data/THLmeny.PNG"><img alt="ovningar/Data/THLmeny.PNG" src="ovningar/Data/THLmeny.PNG" style="width: 600px;" /></a>
+</div>
 <div class="section" id="ladda-ned-ett-dataset">
 <h2>Ladda ned ett dataset<a class="headerlink" href="#ladda-ned-ett-dataset" title="Permalink to this headline">¶</a></h2>
 <p>Nu ser du en meny med olika tillgängliga datasets. Ta hjälp av bilderna nedan när du gör uppgiften.</p>
@@ -397,7 +395,9 @@
 </div></blockquote>
 <p>Du får nu se en tabell över det dataset du valt. Alla årtal och orter är kanske inte tillgängliga, och webbsidan meddelar om något saknas.</p>
 <p>Du har nu möjlighet att &quot;spara som CSV-fil&quot; för att ladda ned filen och använda den på din dator. Vi har dock redan sparat filen så att den finns i mappen Data i samma mapp som denna Notebook.</p>
-<img src=Data/THLval.PNG width=600><img src=Data/THLresult.PNG width=600></div>
+<a class="reference internal image-reference" href="ovningar/Data/THLval.PNG"><img alt="ovningar/Data/THLval.PNG" src="ovningar/Data/THLval.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="ovningar/Data/THLresult.PNG"><img alt="ovningar/Data/THLresult.PNG" src="ovningar/Data/THLresult.PNG" style="width: 600px;" /></a>
+</div>
 <div class="section" id="dags-att-borja-koda-las-in-csv-fil-i-python">
 <h2>Dags att börja koda - Läs in csv-fil i python<a class="headerlink" href="#dags-att-borja-koda-las-in-csv-fil-i-python" title="Permalink to this headline">¶</a></h2>
 <p>Vi börjar med att hämta in funktionspaket med hjälp av <code class="docutils literal notranslate"><span class="pre">import</span></code>-kommandot.</p>
@@ -481,13 +481,14 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <li><p>Varje rad har lika många element</p></li>
 </ul>
 <p>Om något av dessa egenskaper saknas, måste vi lösa det på något annat sätt.</p>
-<img src='Data/CSVex.PNG' width=600>
+<a class="reference internal image-reference" href="ovningar/Data/CSVex.PNG"><img alt="ovningar/Data/CSVex.PNG" src="ovningar/Data/CSVex.PNG" style="width: 600px;" /></a>
 <p>Om vi öppnar filen <em>tobak_8_9.csv</em> och läser den (se bilden nedan) märker vi två problem:</p>
 <ul class="simple">
 <li><p>Det finns ingen rad med kolumnnamn. Den första raden innehåller data.</p></li>
 <li><p>Elementen separeras inte med kommatecken, utan med semikolon. Det här är vanligt när vi hanterar finländska datasets, eftersom vi använder decimalkomma. Systemet är gjort för engelska dokument som använder decimalpunkt. Dock ser vi att filens decimaltal ändå använder punkter, så decimaltecknen är inte ett problem.</p></li>
 </ul>
-<img src='Data/CSVsemicol.PNG' width=600><p>Vi måste läsa in filen på nytt. Den här gången berättar vi för programmet att använda &quot;;&quot; som separator, och att titlarna saknas.</p>
+<a class="reference internal image-reference" href="ovningar/Data/CSVsemicol.PNG"><img alt="ovningar/Data/CSVsemicol.PNG" src="ovningar/Data/CSVsemicol.PNG" style="width: 600px;" /></a>
+<p>Vi måste läsa in filen på nytt. Den här gången berättar vi för programmet att använda &quot;;&quot; som separator, och att titlarna saknas.</p>
 <blockquote>
 <div><p>Kör koden och läs den noga.</p>
 </div></blockquote>
@@ -735,7 +736,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x1151edbb0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f09df07b220&gt;]
 </pre></div>
 </div>
 <img alt="../_images/intro_2_tabell_och_graf_32_1.png" src="../_images/intro_2_tabell_och_graf_32_1.png" />
@@ -1120,7 +1121,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x115655280&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f09deeff040&gt;]
 </pre></div>
 </div>
 <img alt="../_images/intro_2_tabell_och_graf_49_1.png" src="../_images/intro_2_tabell_och_graf_49_1.png" />
@@ -1232,7 +1233,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="n">f49cbcfc9065</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1658</span><span class="o">/</span><span class="mf">3401817492.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Vi skapar en ny variabel tobak, som skriver över den förra, genom att kombinera den gamla tabellen tobak och den nya tabellen över yrkesskolor.</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">tobak</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">tobak</span><span class="p">,</span> <span class="n">yrkes</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Ar&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">tobakk</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1263,7 +1264,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">39714</span><span class="n">ded1227</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1658</span><span class="o">/</span><span class="mf">1046028507.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tobakk</span><span class="o">.</span><span class="n">Ar</span><span class="p">,</span> <span class="n">tobakk</span><span class="o">.</span><span class="n">tobak_8_9</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Högstadium, 8-9&#39;</span><span class="p">)</span>
