@@ -1,16 +1,16 @@
-Tervetuloa avoimen datan pariin
+Välkommen att använda Open Data
 ===============================
 
-Tälle sivulle on koottu avoimeen dataan perustuvaa opetusaineistoa maantieteen aiheista.
-Harjoitukset löydät sivun vasemmassa reunassa olevasta sisällysluettelosta.
-Kun avaat harjoituksen, se näkyy esikatselumoodissa.
-Jos haluat päästä itse muokkaamaan ja käyttämään harjoitusta, seuraa ohjetta alla.
+Denna sida är en Jupyter Book. Här hittar du guider och övningar som hjälper dig behärska statistik och programmering med utgångspunkt i fysik.
+Våra Notebooks med övningar och instruktioner hittar du i innehållsförteckningen i den vänstra kanten.
+När du öppnar en övning syns en förhandsgranskning. Du kan öppna den som en interaktiv Notebook enligt instruktionerna nedan:
 
-### Notebookin käynnistäminen Binderissa
 
-1. Avaa haluamasi notebook-harjoitus Jupyter Bookissa valitsemalla se vasemmalla olevasta sisällysluettelosta.
-1. Klikkaa oikealla ylhäällä olevaa avaruusraketin kuvaa (ks. kuva alla).
-1. Paina "Binder"-painiketta.
-1. Notebook avautuu nyt Binderissa, huom. tässä voi kestää joitakin minuutteja.
+### Starta en Notebook i Binder
+
+1. Välj och klicka på en Notebook i innehållsförteckningen till vänster
+1. Klicka på raketsymbolen i högra övre hörnet (se bilden nedan)
+1. Raketen visar en meny - välj "Binder"
+1. En kopia av Notebooken öppnas nu i Binder - det kan ta en minut eller två.
 
 ![Kuva, jossa näytetään, että notebookin voi avata Binderissa painamalla sivun oikealla yläreunassa olevaa avaruusraketin kuvaa.](/kuvat/jupyter-book-example.png)
