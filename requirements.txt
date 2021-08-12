@@ -1,0 +1,11 @@
+jupyter-book==0.9.1
+matplotlib
+numpy
+ghp-import
+pandas
+geopandas
+mapclassify
+descartes
+osmnx
+folium
+bokeh
