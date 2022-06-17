@@ -4,11 +4,13 @@
 <html lang="se">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Intro 2 - Informationssökning, tabeller och diagram &#8212; Hälsokunskap</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,36 +20,35 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://opendata-education.github.io/se_Halsokunskap/intro.html/ovningar/intro_2_tabell_och_graf.html" />
     <link rel="shortcut icon" href="../_static/logo.png"/>
@@ -55,10 +56,27 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Intro 1: Använd Jupyter Notebooks" href="intro_1_jupyter_python.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="se">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,10 +85,15 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="../_static/logo.png" class="logo" alt="logo">
       
@@ -81,135 +104,245 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Välkommen att använda Open Data
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Välkommen att använda Open Data
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ovningar.html">
+   ÖVNINGAR
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_1_jupyter_python.html">
+     Intro 1: Använd Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Intro 2 - Informationssökning, tabeller och diagram
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Ovningar
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro_1_jupyter_python.html">
-   Intro 1: Använd Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Intro 2 - Informationssökning, tabeller och diagram
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ovningar/intro_2_tabell_och_graf.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/opendata-education/se_Halsokunskap"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/opendata-education/se_Halsokunskap/issues/new?title=Issue%20on%20page%20%2Fovningar/intro_2_tabell_och_graf.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/opendata-education/se_Halsokunskap/main?urlpath=tree/material/ovningar/intro_2_tabell_och_graf.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/opendata-education/se_Halsokunskap/main?urlpath=tree/material/ovningar/intro_2_tabell_och_graf.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/opendata-education/se_Halsokunskap"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/opendata-education/se_Halsokunskap/issues/new?title=Issue%20on%20page%20%2Fovningar/intro_2_tabell_och_graf.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/ovningar/intro_2_tabell_och_graf.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
    Intro 2 - Informationssökning, tabeller och diagram
@@ -315,50 +448,171 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Intro 2 - Informationssökning, tabeller och diagram</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Intro 2 - Informationssökning, tabeller och diagram
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#del-1">
+     Del 1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#del-2">
+     Del 2
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#del-3">
+     Del 3
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#del-4">
+     Del 4
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uppgifter">
+     Uppgifter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Del 1
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soka-datasets">
+     Söka datasets
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ladda-ned-ett-dataset">
+     Ladda ned ett dataset
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dags-att-borja-koda-las-in-csv-fil-i-python">
+     Dags att börja koda - Läs in csv-fil i python
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vad-ar-egentligen-en-csv-fil-och-varfor-fungerar-den-har-inte-som-den-ska">
+     Vad är egentligen en csv-fil, och varför fungerar den här inte som den ska?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#snygga-till-tabellen">
+     Snygga till tabellen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Del 2
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anvand-tabellen-for-att-rita-diagram">
+     Använd tabellen för att rita diagram
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#snygga-till-diagram-sa-att-det-viktiga-kommer-fram">
+     Snygga till diagram, så att det viktiga kommer fram
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Del 3
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kombinera-tabeller">
+     Kombinera tabeller
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jamforelsegraf">
+     Jämförelsegraf
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gor-sjalv">
+     Gör själv
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="intro-2-informationssokning-tabeller-och-diagram">
-<h1>Intro 2 - Informationssökning, tabeller och diagram<a class="headerlink" href="#intro-2-informationssokning-tabeller-och-diagram" title="Permalink to this headline">¶</a></h1>
+  <section id="intro-2-informationssokning-tabeller-och-diagram">
+<h1>Intro 2 - Informationssökning, tabeller och diagram<a class="headerlink" href="#intro-2-informationssokning-tabeller-och-diagram" title="Permalink to this headline">#</a></h1>
 <p>Varje år görs hälsoundersökningar i Finland och världen över. Resultaten från många av undersökningarna är Öppna Data, och vi är fria att använda och analysera dem.</p>
 <p>Resultaten från många undersökningar i Finland hittas på <strong>THLs</strong> (Terveyden ja Hyvinvoinnin Laitos - Institutet för hälsa och välfärd) hemsida, och i den här övningen ska vi lära oss hur man kan dra nytta av den data som finns samlad där, och åskådliggöra den i diagram.</p>
 <p><strong>Vi lär oss</strong></p>
-<div class="section" id="del-1">
-<h2>Del 1<a class="headerlink" href="#del-1" title="Permalink to this headline">¶</a></h2>
+<section id="del-1">
+<h2>Del 1<a class="headerlink" href="#del-1" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Söka datasets (denna gång bland THLs öppna data)</p></li>
 <li><p>Spara csv-filer och läsa in dem i python</p></li>
 <li><p>Vad är egentligen en csv-fil, och varför fungerar den här inte som den ska?</p></li>
 <li><p>Snygga till tabeller, så att det viktiga kommer fram</p></li>
 </ul>
-</div>
-<div class="section" id="del-2">
-<h2>Del 2<a class="headerlink" href="#del-2" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="del-2">
+<h2>Del 2<a class="headerlink" href="#del-2" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Rita diagram utgående från tabell</p></li>
 <li><p>Snygga till diagram, så att det viktiga kommer fram</p></li>
 </ul>
-</div>
-<div class="section" id="del-3">
-<h2>Del 3<a class="headerlink" href="#del-3" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="del-3">
+<h2>Del 3<a class="headerlink" href="#del-3" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Ta in fler tabeller och jämför grafer</p></li>
 </ul>
-</div>
-<div class="section" id="del-4">
-<h2>Del 4<a class="headerlink" href="#del-4" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="del-4">
+<h2>Del 4<a class="headerlink" href="#del-4" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Gör själv</p></li>
 </ul>
-</div>
-<div class="section" id="uppgifter">
-<h2>Uppgifter<a class="headerlink" href="#uppgifter" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="uppgifter">
+<h2>Uppgifter<a class="headerlink" href="#uppgifter" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><p>Uppgifter är markerade på det här sättet, och utspridda i dokumentet.</p>
 </div></blockquote>
@@ -368,21 +622,20 @@
 <blockquote>
 <div><p>Om uppgifterna innehåller frågor kan du skriva dina svar direkt i dokumentet. Om uppgifterna ber dig koda något kan du skapa en kodcell och testa.</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id1">
-<h1>Del 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="soka-datasets">
-<h2>Söka datasets<a class="headerlink" href="#soka-datasets" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id1">
+<h1>Del 1<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<section id="soka-datasets">
+<h2>Söka datasets<a class="headerlink" href="#soka-datasets" title="Permalink to this headline">#</a></h2>
 <p>För att kunna visa statistik måste vi först hitta data. I detta exempel har vi använt <a class="reference external" href="https://thl.fi/sv/web/thlfi-sv/statistik-och-data/material-och-tjanster/oppna-data">THLs Öppna Databank</a>. Där finns hundratals datasets att söka igenom.</p>
 <p>Detta exempel använder datasets med information om ungdomars hälsovanor när det gäller användning av rusmedel.</p>
 <blockquote>
 <div><p>Gå till databanken genom att klicka på länken. Klicka på länkar enligt bilderna nedan, så att du öppnar fliken &quot;Hälsobeteende och psykiska symtom&quot;</p>
 </div></blockquote>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLmeny.png"><img alt="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLmeny.png" src="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLmeny.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="ladda-ned-ett-dataset">
-<h2>Ladda ned ett dataset<a class="headerlink" href="#ladda-ned-ett-dataset" title="Permalink to this headline">¶</a></h2>
+<img src=https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLmeny.png width=600></section>
+<section id="ladda-ned-ett-dataset">
+<h2>Ladda ned ett dataset<a class="headerlink" href="#ladda-ned-ett-dataset" title="Permalink to this headline">#</a></h2>
 <p>Nu ser du en meny med olika tillgängliga datasets. Ta hjälp av bilderna nedan när du gör uppgiften.</p>
 <blockquote>
 <div><p>Markera valfritt dataset (vi valde tobaksvanor i åk.8-9). Du kan välja fler, men hanteringen blir mer komplicerad då.</p>
@@ -395,11 +648,9 @@
 </div></blockquote>
 <p>Du får nu se en tabell över det dataset du valt. Alla årtal och orter är kanske inte tillgängliga, och webbsidan meddelar om något saknas.</p>
 <p>Du har nu möjlighet att &quot;spara som CSV-fil&quot; för att ladda ned filen och använda den på din dator. Vi har dock redan sparat filen så att den finns i mappen Data i samma mapp som denna Notebook.</p>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLval.png"><img alt="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLval.png" src="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLval.png" style="width: 600px;" /></a>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLresult.png"><img alt="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLresult.png" src="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLresult.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="dags-att-borja-koda-las-in-csv-fil-i-python">
-<h2>Dags att börja koda - Läs in csv-fil i python<a class="headerlink" href="#dags-att-borja-koda-las-in-csv-fil-i-python" title="Permalink to this headline">¶</a></h2>
+<img src=https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLval.png width=600><img src=https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/THLresult.png width=600></section>
+<section id="dags-att-borja-koda-las-in-csv-fil-i-python">
+<h2>Dags att börja koda - Läs in csv-fil i python<a class="headerlink" href="#dags-att-borja-koda-las-in-csv-fil-i-python" title="Permalink to this headline">#</a></h2>
 <p>Vi börjar med att hämta in funktionspaket med hjälp av <code class="docutils literal notranslate"><span class="pre">import</span></code>-kommandot.</p>
 <p><strong>pandas</strong> låter oss läsa in datafiler i programmet, och <strong>matplotlib-pyplot</strong> låter oss rita diagram senare.
 Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. (tryck på run-knappen, eller markera cellen och tryck <em>Ctrl+Enter</em>)</p>
@@ -471,9 +722,9 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div></div></div>
 </div>
 <p>Det här var konstigt. Tabellen ser inte alls bra ut. För att förstå vad som gick fel behöver vi tänka på vad en CSV-fil är.</p>
-</div>
-<div class="section" id="vad-ar-egentligen-en-csv-fil-och-varfor-fungerar-den-har-inte-som-den-ska">
-<h2>Vad är egentligen en csv-fil, och varför fungerar den här inte som den ska?<a class="headerlink" href="#vad-ar-egentligen-en-csv-fil-och-varfor-fungerar-den-har-inte-som-den-ska" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="vad-ar-egentligen-en-csv-fil-och-varfor-fungerar-den-har-inte-som-den-ska">
+<h2>Vad är egentligen en csv-fil, och varför fungerar den här inte som den ska?<a class="headerlink" href="#vad-ar-egentligen-en-csv-fil-och-varfor-fungerar-den-har-inte-som-den-ska" title="Permalink to this headline">#</a></h2>
 <p>CSV står för <em>comma separated values</em>, och en sådan fil består av tabellvärden åtskilda med kommatecken. I bilden nedan ser vi ett exampel på en CSV-fil och den tabell som den ger. Vi märker att</p>
 <ul class="simple">
 <li><p>Första raden innehåller kolumnernas namn</p></li>
@@ -481,14 +732,13 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <li><p>Varje rad har lika många element</p></li>
 </ul>
 <p>Om något av dessa egenskaper saknas, måste vi lösa det på något annat sätt.</p>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVex.png"><img alt="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVex.png" src="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVex.png" style="width: 600px;" /></a>
+<img src='https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVex.png' width=600>
 <p>Om vi öppnar filen <em>tobak_8_9.csv</em> och läser den (se bilden nedan) märker vi två problem:</p>
 <ul class="simple">
 <li><p>Det finns ingen rad med kolumnnamn. Den första raden innehåller data.</p></li>
 <li><p>Elementen separeras inte med kommatecken, utan med semikolon. Det här är vanligt när vi hanterar finländska datasets, eftersom vi använder decimalkomma. Systemet är gjort för engelska dokument som använder decimalpunkt. Dock ser vi att filens decimaltal ändå använder punkter, så decimaltecknen är inte ett problem.</p></li>
 </ul>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVsemicol.png"><img alt="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVsemicol.png" src="https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVsemicol.png" style="width: 600px;" /></a>
-<p>Vi måste läsa in filen på nytt. Den här gången berättar vi för programmet att använda &quot;;&quot; som separator, och att titlarna saknas.</p>
+<img src='https://raw.githubusercontent.com/opendata-education/se_Halsokunskap/main/material/ovningar/Data/CSVsemicol.png' width=600><p>Vi måste läsa in filen på nytt. Den här gången berättar vi för programmet att använda &quot;;&quot; som separator, och att titlarna saknas.</p>
 <blockquote>
 <div><p>Kör koden och läs den noga.</p>
 </div></blockquote>
@@ -589,9 +839,9 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div></div></div>
 </div>
 <p>Sådär. Nu är tabellen finare. Kolumnerna har inga namn, men är numrerade istället. När vi nu får en överblick över tabellen ser vi att där finns mycket överflödig information.</p>
-</div>
-<div class="section" id="snygga-till-tabellen">
-<h2>Snygga till tabellen<a class="headerlink" href="#snygga-till-tabellen" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="snygga-till-tabellen">
+<h2>Snygga till tabellen<a class="headerlink" href="#snygga-till-tabellen" title="Permalink to this headline">#</a></h2>
 <p>Tabellen innehåller för många kolumner. Den enda information vi vill ha är årtal (kolumn 5) och %rökare (kolumn 6). Vi kan ta bort de övriga med kommandot <code class="docutils literal notranslate"><span class="pre">.drop()</span></code> om vi anger de överflödiga kolumnerna.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -715,12 +965,12 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </table>
 </div></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="id2">
-<h1>Del 2<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="anvand-tabellen-for-att-rita-diagram">
-<h2>Använd tabellen för att rita diagram<a class="headerlink" href="#anvand-tabellen-for-att-rita-diagram" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id2">
+<h1>Del 2<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
+<section id="anvand-tabellen-for-att-rita-diagram">
+<h2>Använd tabellen för att rita diagram<a class="headerlink" href="#anvand-tabellen-for-att-rita-diagram" title="Permalink to this headline">#</a></h2>
 <p>Nu har vi en snygg och enkel tabell, och det gör det lätt att använda den. Nu ska vi testa det andra funktionspaketet som vi importerade i början, <strong>matplotlib.pyplot</strong> (plt). Matplotlib innehåller grafiska verktyg, och pyplot låter oss rita grafer och diagram.</p>
 <p>Vi ska använda funktionen <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code>, som används för att rita grafer. I parentesen ska vi skriva in listorna med x-värden och y-värden för grafen. Vi vill ha årtalen på x-axeln, och vi kan ange kolumnen med årtal som <strong>tobak.Ar</strong> eller <strong>tobak['Ar']</strong>. Vi anger y-värden på samma sätt.</p>
 <blockquote>
@@ -736,7 +986,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fac5093ea90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f09aabfbdc0&gt;]
 </pre></div>
 </div>
 <img alt="../_images/intro_2_tabell_och_graf_32_1.png" src="../_images/intro_2_tabell_och_graf_32_1.png" />
@@ -748,9 +998,9 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <li><p>Den har ingen rubrik, inget som berättar vad den handlar om. Grafen borde kunna avläsas utan någon ytterligare beskrivning.</p></li>
 <li><p>y-skalan börjar inte från 0, och det gör grafen en aning missvisande.</p></li>
 </ul>
-</div>
-<div class="section" id="snygga-till-diagram-sa-att-det-viktiga-kommer-fram">
-<h2>Snygga till diagram, så att det viktiga kommer fram<a class="headerlink" href="#snygga-till-diagram-sa-att-det-viktiga-kommer-fram" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="snygga-till-diagram-sa-att-det-viktiga-kommer-fram">
+<h2>Snygga till diagram, så att det viktiga kommer fram<a class="headerlink" href="#snygga-till-diagram-sa-att-det-viktiga-kommer-fram" title="Permalink to this headline">#</a></h2>
 <p>Vi ska lära oss ett par funktioner som hör ihop med grafritandet. I den förra kodcellen använde vi bara en enda rad med kod för att få fram en graf. Det finns många kommandon vi kan lägga till för att ändra på grafens utseende.</p>
 <p><code class="docutils literal notranslate"><span class="pre">fig=plt.figure(figsize=(15,5))</span></code> ska skrivas först. Det låter oss välja grafens layout. I detta fall väljer vi bara storlek.</p>
 <p><code class="docutils literal notranslate"><span class="pre">plt.show()</span></code> ska skrivas sist. Ser du den konstiga raden [&lt;matplotlib.lines.Line2D at 0x25ac1c25070&gt;] vid den förra grafen? Den får vi bort med detta kommando.</p>
@@ -779,12 +1029,12 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 <img alt="../_images/intro_2_tabell_och_graf_36_0.png" src="../_images/intro_2_tabell_och_graf_36_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="id3">
-<h1>Del 3<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="kombinera-tabeller">
-<h2>Kombinera tabeller<a class="headerlink" href="#kombinera-tabeller" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id3">
+<h1>Del 3<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h1>
+<section id="kombinera-tabeller">
+<h2>Kombinera tabeller<a class="headerlink" href="#kombinera-tabeller" title="Permalink to this headline">#</a></h2>
 <p>Vi har gjort en simpel graf, men den skulle ge mer information om det fanns något att jämföra med. THL har också statistik för tobakskonsumtionen bland elever i årskurs 1-2 i gymnasiet. Datan hittas på samma ställe, och CSV-filen finns redan sparad i Data-mappen med namnet <strong>tobak_1_2.csv</strong>. Vi behandlar den på samma sätt som den tidigare filen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1109,9 +1359,9 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </table>
 </div></div></div>
 </div>
-</div>
-<div class="section" id="jamforelsegraf">
-<h2>Jämförelsegraf<a class="headerlink" href="#jamforelsegraf" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="jamforelsegraf">
+<h2>Jämförelsegraf<a class="headerlink" href="#jamforelsegraf" title="Permalink to this headline">#</a></h2>
 <p>Vi vill ha en graf som inkluderar båda dessa datasets. Det är enkelt att rita fler grafer i samma diagram. Vi skriver bara flera <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code>-kommandon. Vi måste ange både x- och y-lista i båda.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1121,7 +1371,7 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fac5081c6a0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f09a8a82940&gt;]
 </pre></div>
 </div>
 <img alt="../_images/intro_2_tabell_och_graf_49_1.png" src="../_images/intro_2_tabell_och_graf_49_1.png" />
@@ -1152,9 +1402,9 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 <p>Vi ser från grafen att rökning i både högstadiet och gymnasiet följer samma trender. Det är lite förvånande. Man kunde kanske tänka att trenderna i gymnasiets statistik borde ligga ett par år efter högstadiets. Detta tyder på att trenderna styrs av yttre faktorer. Man kunde kanske hitta direkta samband om man undersöker utvecklingen av tobakspriser eller tobakens status inom populärkulturen.</p>
-</div>
-<div class="section" id="gor-sjalv">
-<h2>Gör själv<a class="headerlink" href="#gor-sjalv" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="gor-sjalv">
+<h2>Gör själv<a class="headerlink" href="#gor-sjalv" title="Permalink to this headline">#</a></h2>
 <p>Du kan fortsätta på samma tabell och graf. I mappen finns också THLs statistik om tobaksvanor hos elever i yrkesskolor (Data/tobak_ys.csv).</p>
 <blockquote>
 <div><p>Här nedan kan du läsa in den filen, snygga till den och lägga till den i tabellen och grafen.</p>
@@ -1169,8 +1419,8 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1194,38 +1444,46 @@ Kör kodcellen nedan så att funktionspaketen finns tillgängliga i dokumentet. 
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="intro_1_jupyter_python.html" title="previous page">Intro 1: Använd Jupyter Notebooks</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro_1_jupyter_python.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Intro 1: Använd Jupyter Notebooks</p>
         </div>
-        
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By HIP Education and Open Data Team<br/>
-        
-          <div class="extra_footer">
-            <div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By HIP Education and Open Data Team<br/>
+  
+    <div class="extra_footer">
+      <div>
 <a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
 </div>    
 
-          </div>
-      </p>
     </div>
-  </footer>
-</main>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>
